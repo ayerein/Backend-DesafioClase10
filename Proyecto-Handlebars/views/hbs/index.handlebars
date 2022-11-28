@@ -1,0 +1,33 @@
+<div class="d-flex justify-content-center align-items-center flex-column w-50 h-50">
+  <h2 class="mb-4">Vista de productos</h2>
+   
+  {{#if mostrarProductos}}
+    <table class="table table-hover border">
+      <thead>
+        <tr>
+          <th scope="col">Producto</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Foto</th>
+        </tr>
+      </thead>
+      <tbody>
+          {{#each mostrarProductos}}
+            <tr>
+              <th>{{this.title}}</th>
+              <th>${{this.price}}</th>
+              <th><img src={{this.thumbnail}} height="30px" width="30px" alt=""></th>
+            </tr>
+          {{/each}}
+      </tbody>
+    </table>
+  {{else}}
+  <div class="alert alert-warning" role="alert">
+  No hay productos agregados!
+  </div>
+    
+  {{/if}}
+
+  <a href="http://localhost:3001/" class="btn btn-primary mt-4" role="button">Agregar más productos</a>
+</div>
+
+

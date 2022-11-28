@@ -1,0 +1,17 @@
+extends template
+
+block principal 
+    div.d-flex.justify-content-center.align-items-center.flex-column.w-75
+        h2.mb-5 Agregar nuevo producto
+        div.w-75
+            form.d-flex.justify-content-center.align-items-center.flex-column.mb-5(action='/productos' method='POST')
+                label(for='title') Producto:
+                input#title.w-50(type='text' name='title' required='')
+                label(for='price') Precio:
+                input#price.w-50(type='text' name='price' required='')
+                label(for='thumbnail') Url de la imagen:
+                input#thumbnail.w-50(type='text' name='thumbnail' required='')
+                input.btn.btn-light.mt-3(type='submit' value='Agregar Producto')
+        a.btn.btn-primary(href='http://localhost:3001/productos' role='button') Ver lista de productos
+
+

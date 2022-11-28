@@ -1,0 +1,20 @@
+<%- include("./partials/header.ejs") -%>
+
+<div class="d-flex justify-content-center align-items-center flex-column w-75">
+    <h2 class="mb-5">Agregar nuevo producto</h2>
+    <div class="w-75">
+        <form action="/productos" method="POST"  class="d-flex justify-content-center align-items-center flex-column mb-5">
+            <label for="title">Producto:</label>
+            <input type="text" name="title"  id="title" class="w-50" required>
+            <label for="price">Precio:</label>
+            <input type="text" name="price" id="price" class="w-50" required>
+            <label for="thumbnail">Url de la imagen:</label>
+            <input type="text" name="thumbnail" id="thumbnail" class="w-50" required>
+            <input type="submit"  value="Agregar Producto" class="btn btn-light mt-3">
+        </form>
+    </div>
+
+    <a href="http://localhost:3001/productos" class="btn btn-primary" role="button">Ver lista de productos</a>
+</div>
+
+<%- include("./partials/footer.ejs") -%>

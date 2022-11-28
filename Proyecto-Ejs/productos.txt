@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Banana",
+    "price": "530",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_banana-256.png",
+    "id": 1
+  },
+  {
+    "title": "Uva",
+    "price": "650",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_uvas-256.png",
+    "id": 2
+  },
+  {
+    "title": "Frutilla",
+    "price": "550",
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/fruits-52/150/icon_fruit_morango-256.png",
+    "id": 3
+  }
+]

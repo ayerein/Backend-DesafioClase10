@@ -1,0 +1,26 @@
+extends template
+
+block verProductos
+  div.d-flex.justify-content-center.align-items-center.flex-column.w-50.h-50
+    h2.mb-4 Vista de productos
+    if mostrarProductos.length === 0
+      div.alert.alert-warning(role='alert')
+        p No hay productos agregados!
+    else
+      table.table.table-hover.border
+          thead
+            tr
+              th(scope='col') Producto
+              th(scope='col') Precio
+              th(scope='col') Foto
+          tbody
+            each productos in mostrarProductos
+              tr
+                  th= productos.title
+                  th= productos.price
+                  th
+                    img(src=productos.thumbnail height='30px' width='30px' alt='')
+    a.btn.btn-primary.mt-4(href='http://localhost:3001/' role='button') Agregar más productos
+
+
+
